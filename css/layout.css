@@ -1,0 +1,245 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{ margin:0px; padding:0px; font-family: "微軟正黑體"; letter-spacing:2px;}
+*{ 
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+a{ text-decoration:none;}
+
+/*清除 clearfix*/
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix {*zoom: 1; _zoom: 1; }
+
+.gototop{ width:50px; height:50px; line-height:50px; text-align:center; background:rgba(204,204,51,0.9); border-radius:50%; position:fixed; right:30px; bottom:30px; cursor:pointer;}
+
+/*版型====================================*/
+
+.header{
+	border:0px solid red;/**/
+	width:1400px;
+	height:100px; 
+	overflow: hidden;
+	position:fixed;/*fixed的寬高以視窗為主*/
+	left:50%;/*置中*/
+	margin-left:-700px;/*定位點在左上*/
+	z-index:30;
+	background:rgba(255,255,255,0.6);
+	border-bottom:1px solid #FFF;
+	}
+.container{
+	border:0px solid navy;/**/
+	width:1100px; 
+	margin:0 auto; 
+	position:relative;/*空出header fixed的高度*/
+	top:100px;
+	margin-top:40px;}	
+.footer{
+	border-top:0px solid #ffef03;/**/
+	width:1400px;
+	margin:0 auto;
+	text-align:center;
+	position:relative;/*空出header fixed的高度*/
+	top:100px;
+	margin-top:40px;}
+.footer img{
+	margin-top:20px;
+	margin-bottom:20px;}
+.footer p{
+	background-color:#eef0f1;
+	height:40px;
+	font-size:13px;
+	line-height:40px;}
+
+/*header=========================*/
+.header h1.logo{
+	padding-top:10px; 
+	padding-left:40px;	
+	position:absolute; left:0px; top:0px;}
+.header h1.logo a{
+	width:137px;
+	height:81px; 
+	display:block;}
+	
+/*nav=========================*/	
+.header .nav{ 
+	border:0px solid pink; /**/
+	position:absolute; 
+	right:40px; bottom:15px;}
+.header .nav ul{
+	list-style-type: none; 
+	margin: 0; 
+	padding: 0;}
+.header .nav li {
+	float: left; 
+	background-repeat: no-repeat;
+	background-position: center;}
+.header .nav li a {
+    display: block;
+	width:120px; height:22px;
+    color: #000;
+    text-align: center;
+	font-size:16px;
+	color:#4c4c4c;}
+.header .nav li a:hover {
+	color:#eccf21;
+	background:url(../img/menu_line.png) center bottom no-repeat;}
+
+/*keyvisaul=========================*/
+/*<!--修改 把前景圖改背景圖-->*/	
+.keyvisaul {
+	width:100%;	height:650px;
+	background-color: #eccf21;
+	margin:0 auto;
+	margin-bottom:185px;
+	position:relative;/*空出header fixed的高度*/
+	top:100px;}
+.keyvisaul .keyvisual_inner{ 
+	width:1400px; height:650px; 
+	margin:0 auto;  
+	background:url(../img/kv.jpg) no-repeat; 
+	position:relative;}
+.keyvisaul .keyvisual_inner  p.kv_logo{ 
+	width:292px; height:340px; 
+	overflow:hidden; 
+	position:absolute; 
+	right:200px;}
+.keyvisaul .keyvisual_inne  p.kv_logo img{ 
+	display:block; 
+	width:292px; 
+	height:auto;}
+/*hello=========================*/
+.hello{}
+.hello .head{
+	border:0px solid red;/**/
+	position:absolute;
+	top:-146px;}
+.hello .hand{
+	border:0px solid red;/**/
+	position:absolute;
+	top:-20px;
+	left:21px;}
+.hello .hello1 p{
+	position:absolute;
+	top:-130px;
+	left:212px;	
+	display: inline;
+	background-color:#ffef03;
+	font-size:26px;}
+.hello .hello2 p{
+	position:absolute;
+	top:-90px;
+	left:212px;	
+	display: inline;
+	background-color:#ffef03;
+	font-size:26px;}
+.hello .hello3 p{
+	position:absolute;
+	top:-50px;
+	left:212px;	
+	display: inline;
+	background-color:#ffef03;
+	font-size:26px;}
+
+/*about=========================*/	
+.about{
+	width:1100px;
+	border-top:3px solid #ffef03;
+	border-bottom:3px solid #ffef03;
+	position:relative;}
+.about .about_inner{
+	margin:10px 10px;}
+.about .about_inner .title{
+	height:150px; 
+	float:left;}
+.about .about_inner .title h2{
+	width:180px;
+	border-right:1px solid #CCC;/**/
+	line-height:150px;
+	text-align:center;
+	font-size:26px;
+	font-weight: 200;
+	color:#4c4c4c;
+	margin-right:30px;}
+.about .about_inner .content{
+	height:150px;
+	padding-top:30px;}
+.about .about_inner .content p{
+	border:0px solid #06C;/**/
+	margin-left:180px;
+	line-height:1.6;
+	font-size:16px;
+	color:#4c4c4c;}
+
+/*gallery============================*/
+.gallery{
+	width:1100px;
+	margin-top:70px;}
+/*oprate============================*/
+.oprate{
+	border:0px solid #000;/**/	
+	width:562px; /*要有寬度 margin 0 auto才有效*/
+	margin:0 auto;
+	text-align:center;
+	margin-bottom:30px;}
+.oprate a{
+	border:0px solid #F00;/**/
+	display:block;
+	height:30px;
+	margin-right:60px;
+	line-height:30px;
+	float:left;
+	font-size:26px;
+	color:#808080;
+	text-align:center;}
+.oprate a:hover{
+	color:#f5e729;}	
+.oprate a:last-child{ 
+	margin-right:0px;} /*最後一個a不要有margin-right*/	
+.oprate a:hover{}
+
+/*piece============================*/
+.piece{clear:both;
+	border-bottom:6px solid #FFF;}
+.piece .box_1{ 
+	border:0px solid #FFF;/**/
+	width:calc(100%/3);
+	height:276px; 
+	float:left; 
+	background: #CCC;
+	text-align:center;
+	position:relative;}
+/*標題*/	
+.piece .box_1 h3{
+	font-size:30px;
+	font-weight:200;
+	color:#FFFFFF;
+	line-height:1.6;
+	margin-top:100px;}
+/*色塊*/
+.piece .box_1 a.color_1 {
+	background: #f7f272;
+	color:#ada94f;}
+.piece .box_1 a.color_2 {
+	background: #f7cfad;
+	color:#a48b76;}
+.piece .box_1 a{ 
+	display:block; 
+	width:100%; height:276px; 
+	position:absolute; 
+	left:0px; top:0px; transition:all .5s;}
+.piece .box_1 a:hover{ opacity:0;}
+.piece .box_1 a img{
+	margin-top:24px;
+	/*position:absolute;*/
+	/*opacity:0;*/}	
+.piece .box_1 a p{
+	font-size:20px;
+	line-height:1.6;
+	margin-top:10px;}
+.piece .box_1 span{}
+.piece .box_1 span img{}
+		
